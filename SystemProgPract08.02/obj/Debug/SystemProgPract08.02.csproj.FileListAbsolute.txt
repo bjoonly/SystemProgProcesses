@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02_MarkupCompile.cache
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02_MarkupCompile.lref
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\bin\Debug\SystemProgPract08.02.exe.config
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\bin\Debug\SystemProgPract08.02.exe
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\bin\Debug\SystemProgPract08.02.pdb
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\MainWindow.baml
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02.g.resources
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08._02.Properties.Resources.resources
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02.exe
+C:\Users\Admin\source\repos\SystemProgPract08.02\SystemProgPract08.02\obj\Debug\SystemProgPract08.02.pdb

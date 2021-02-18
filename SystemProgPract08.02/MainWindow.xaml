@@ -1,0 +1,99 @@
+﻿<Window x:Class="SystemProgPract08._02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemProgPract08._02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.7*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <DockPanel  LastChildFill="False">
+
+                
+               
+                <TextBlock FontSize="14" TextWrapping="Wrap" Width="80">Interval for update:</TextBlock>
+                <ComboBox Name="comboBox" Width="100" Margin="5">
+                    <ComboBoxItem  Selected="ComboBoxItem_Selected" >1</ComboBoxItem>
+                    <ComboBoxItem Selected="ComboBoxItem_Selected" >2</ComboBoxItem>
+                    <ComboBoxItem Selected="ComboBoxItem_Selected" >5</ComboBoxItem>
+                    <ComboBoxItem  Selected="ComboBoxItem_Selected_1">No update</ComboBoxItem>
+
+                </ComboBox>
+            </DockPanel>
+            <DataGrid  Grid.Row="1" Margin="5"  Name="grid" SelectedItem="{Binding SelectedProcess}" SelectionChanged="grid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn IsReadOnly="True" Width="0.3*" Header="ID" Binding="{Binding PDI}"/>
+                    <DataGridTextColumn IsReadOnly="True" Width="1.5*" Header="Process Name" Binding="{Binding ProcessName}"/>
+                    <DataGridTextColumn IsReadOnly="True" Width="0.7*" Header="Priority" Binding="{Binding  Priority}"/>
+                    <DataGridTextColumn IsReadOnly="True" Width="0.9*" Header="Start Time" Binding="{Binding  StartTime}"/>
+
+
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"></RowDefinition>
+                <RowDefinition ></RowDefinition>
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <DockPanel LastChildFill="False">
+        <TextBox x:Name="textBox"  Grid.Column="1" Width="100"  VerticalAlignment="Center" ></TextBox>
+                <Button x:Name="startProcessButton"  Margin="5,15" MinWidth="70"  Click="startProcessButton_Click">Start process</Button>
+                <Button x:Name="stopProcessButton"   Margin="5,15" MinWidth="70" Click="stopProcessButton_Click" >Stop process</Button>
+            </DockPanel>
+            <Grid Grid.Row="1"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">ID</TextBlock>
+                <TextBlock Grid.Row="0" Background="WhiteSmoke" Grid.Column="1" Margin="10,10" x:Name="PDITextBlock"  VerticalAlignment="Center"></TextBlock>
+
+                <TextBlock Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" >Process Name</TextBlock>
+                <TextBlock Grid.Row="1" Background="WhiteSmoke" Grid.Column="1" Margin="10,10" x:Name="ProcessNameTextBlock" VerticalAlignment="Center"></TextBlock>
+
+                <TextBlock Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center">Priority</TextBlock>
+                <TextBlock Grid.Row="2" Background="WhiteSmoke" Grid.Column="1" Margin="10,10" x:Name="PriorityTextBlock" VerticalAlignment="Center"></TextBlock>
+
+                <TextBlock Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center">Start Time</TextBlock>
+                <TextBlock Grid.Row="3" Background="WhiteSmoke" Grid.Column="1" Margin="10,10" x:Name="StartTimTextBlock" VerticalAlignment="Center" ></TextBlock>
+
+                <TextBlock Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center">Private Memory Size</TextBlock>
+                <TextBlock Grid.Row="4" Background="WhiteSmoke" Grid.Column="1" Margin="10,10" x:Name="PrivateMemorySizeTextBlock" VerticalAlignment="Center"></TextBlock>
+
+                <TextBlock Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center">Total Processor Time</TextBlock>
+                <TextBlock Grid.Row="5" Background="WhiteSmoke" Grid.Column="1" Margin="10,10" x:Name="TotalProcessorTimeTextBlock" VerticalAlignment="Center"></TextBlock>
+
+                <TextBlock Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center">User Processor Time</TextBlock>
+                <TextBlock Grid.Row="6" Background="WhiteSmoke" Grid.Column="1" Margin="10,10" x:Name="UserProcessorTimeTextBlock" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
